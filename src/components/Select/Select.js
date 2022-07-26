@@ -23,6 +23,7 @@ const CustomChevron = styled(Icon)`
   margin-top: auto;
   margin-bottom: auto;
   height: fit-content;
+  pointer-events: none;
 `;
 
 const CustomSelect = styled.select`
