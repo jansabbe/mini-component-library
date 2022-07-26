@@ -9,7 +9,6 @@ const Wrapper = styled.div`
   position: relative;
   width: fit-content;
   color: ${COLORS.gray700};
-  font-family: "Roboto";
 
   &:hover {
     color: ${COLORS.black};
@@ -32,6 +31,7 @@ const CustomSelect = styled.select`
   background-color: ${COLORS.transparentGray15};
   border-radius: 8px;
   padding: 12px 52px 12px 16px;
+  font-family: "Roboto";
   color: inherit;
   cursor: pointer;
   width: calc(16px + ${(p) => p.numChars}ch + 52px);
