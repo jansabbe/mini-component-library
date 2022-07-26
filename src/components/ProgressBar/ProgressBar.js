@@ -32,17 +32,19 @@ const SmallWrapper = styled(BaseWrapper)`
   height: 8px;
 `;
 
+const variants = {
+  large: LargeWrapper,
+  medium: MediumWrapper,
+  small: SmallWrapper,
+};
+
 const Bar = styled.div`
   background-color: ${COLORS.primary};
   height: 100%;
 `;
 
 const ProgressBar = ({ value, size }) => {
-  const Wrapper = {
-    large: LargeWrapper,
-    medium: MediumWrapper,
-    small: SmallWrapper,
-  }[size];
+  const Wrapper = variants[size];
   return (
     <Wrapper role="progressbar" aria-valuenow={value}>
       <BarWrapper>
