@@ -22,7 +22,6 @@ const CustomChevron = styled(Icon)`
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
-  height: fit-content;
   pointer-events: none;
 `;
 
@@ -33,6 +32,7 @@ const CustomSelect = styled.select`
   border-radius: 8px;
   padding: 12px 52px 12px 16px;
   font-family: "Roboto";
+  font-size: ${16 / 16}rem;
   color: inherit;
   cursor: pointer;
   width: calc(16px + ${(p) => p.numChars}ch + 52px);
@@ -50,7 +50,7 @@ const Select = ({ label, value, onChange, children }) => {
       >
         {children}
       </CustomSelect>
-      <CustomChevron id="chevron-down" strokeWidth={2} />
+      <CustomChevron id="chevron-down" strokeWidth={2} size={24} />
     </Wrapper>
   );
 };
